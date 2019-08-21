@@ -14,20 +14,18 @@ body section:nth-child(even) {
 
 h1  {
   font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  letter-spacing: 0.5px;
+  font-weight: 700;
   color: #3B3B3B;
-  font-size: 3.0rem;
+  font-size: 2.75rem;
   line-height: 1.5;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 h2 {
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  color: #3B3B3B;
-  font-size: 1.4rem;
+  font-weight: 400;
+  color: #4E4E4E;
+  font-size: 1.5rem;
   line-height: 1.5;
   margin-bottom: 40px;
 }
@@ -136,4 +134,100 @@ nav.mobile {
 
   }
 
+}
+
+/*Banner Area*/
+
+section.banner {
+  top: 64px;
+}
+
+.img-banner {
+  width: 60%;
+  height: auto;
+  margin: 32px 24px;
+
+}
+
+.img-banner img {
+  width: 100%;
+  height: auto;
+}
+
+.info-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 400px;
+}
+
+.info-banner a {
+  background-color: #4E4E4E;
+  width: 100%;
+  margin-right: 16px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  transition: all 250ms ease 200ms;
+}
+
+.info-banner a:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/*Banner @1024px*/
+
+@media only screen and (max-width: 1024px) {
+  .banner-img {
+    width: 50%;
+    margin-left: 16px;
+  }
+
+  .info-banner a {
+    width: 90%;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+/*Banner Area-Mobile*/
+
+@media only screen and (max-width: 768px) {
+  section.banner {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .img-banner {
+    width: 100%;
+    height: 325px;
+    background-image: url(../capstone_colmar_assets/images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .img-banner img {
+    display: none;
+
+  }
+
+  .info-banner {
+    margin: 32px 16px 32px 16px;
+    text-align: left;
+  }
+
+  .info-banner a, .info-banner h1, .info-banner h2 {
+    width: 100%;
+    margin-right: 0px;
+  }
 }
