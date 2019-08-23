@@ -9,7 +9,7 @@ section {
 }
 
 body section:nth-child(even) {
-  background-color: #D8D8D8;
+  background-color: /*#D8D8D8;*/ #AEB4C7;
 }
 
 h1  {
@@ -18,7 +18,7 @@ h1  {
   color: #3B3B3B;
   font-size: 2.75rem;
   line-height: 1.5;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -163,7 +163,7 @@ section.banner {
 }
 
 .info-banner a {
-  background-color: #4E4E4E;
+  background-color: /*#4E4E4E;*/ #EE6F6F;
   width: 100%;
   margin-right: 16px;
   text-align: center;
@@ -179,13 +179,13 @@ section.banner {
 
 .info-banner a:hover {
   background-color: #FFFFFF;
-  color: #000000;
+  color: #4E4E4E;
 }
 
 /*Banner @1024px*/
 
 @media only screen and (max-width: 1024px) {
-  .banner-img {
+  .img-banner {
     width: 50%;
     margin-left: 16px;
   }
@@ -219,10 +219,11 @@ section.banner {
   .img-banner img {
     display: none;
 
+
   }
 
   .info-banner {
-    margin: 32px 16px 32px 16px;
+    margin: 32px 16px;
     text-align: left;
   }
 
@@ -231,3 +232,157 @@ section.banner {
     margin-right: 0px;
   }
 }
+
+/*Information about Academy*/
+
+/*Image with Content*/
+
+.academy-information {
+  background-color: White;
+}
+
+.information-main {
+  margin: 0 1.5rem 2rem;
+  display: flex;
+}
+
+.information-maintwo {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+}
+
+.information-maintwo img {
+  max-width: 100%;
+  margin: 1.75rem 0;
+  padding: 0.25rem;
+  background-color: #f3f3f3de;
+  opacity: 0.9;
+}
+
+
+.information-maintwo h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.information-maintwo p {
+  margin-bottom: 2rem;
+  line-height: 1.55rem;
+}
+
+.information-maintwo p:nth-child(2n) {
+  font-size: 0.85rem;
+}
+
+.sidebar-mobile {
+  display: none;
+}
+
+/*Side Column*/
+
+.sidebar-orientation {
+  margin: 1.6rem 0 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  background-color: #f3f3f3de;
+  border-radius: 1rem 0;
+}
+
+.sidebar img {
+  width: 35%;
+  height: auto;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.text {
+  margin-left: 1.2rem;
+}
+
+.text h4 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.text p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.readmore a {
+  color: #FF3B3F;
+  font-weight: bold;
+  font-family: "Open Sans";
+  text-decoration: none;
+}
+
+.readmore a:hover {
+  transition: 500ms linear;
+  text-decoration: underline;
+}
+
+/*.firstSide:hover {
+  background-color: #E9E9E9;
+  transition: 500ms ease-in-out 50ms;
+  border-radius: 0 1rem;
+}*/
+
+/* First Section Mobile View  */
+
+@media only screen and (max-width: 480px) {
+
+  .information-main {
+    margin: 0;
+  }
+
+  .information-maintwo {
+    display: none;
+  }
+
+  .sidebar-orientation {
+    padding-right: 1rem;
+  }
+
+  .sidebar {
+    flex-direction: column;
+    border: 0rem;
+    margin-bottom: 3rem;
+    margin-left: -0.5rem;
+  }
+
+  .sidebar img {
+    display: none;
+  }
+
+  .sidebar img:nth-child(2) {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .text {
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .text p {
+    display: flex;
+    width: 100%;
+  }
+
+  .readmore {
+    margin-bottom: 1rem;
+  }
